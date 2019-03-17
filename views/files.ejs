@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="wight=device-width, initial-scale=1.0">
+    <style>
+        body {background-color: #d5ce6b;}
+        .block {width: 70%; margin-left: 15%}
+        h1 {color:#494949; font-size: 3.5em}
+        p {color:#494949; font-size: 1.2em;}
+    </style>
+</head>
+<body>
+<div class="block">
+    <ol>
+        <% for(var i=0; i < filesList.length; i++) { %>
+            <li><%= filesList[i] %></li>
+        <% } %>
+    </ol>
+
+    <!--<p><%= filesList.join(", "); %></p>-->
+</div>
+</body>
+</html>
